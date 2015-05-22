@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E78A702C-C1F2-4216-AF7B-E59406583E86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flags</RootNamespace>
+    <AssemblyName>Flags</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>world.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePanel.Designer.cs">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\FileManager.cs" />
+    <Compile Include="Logic\GameLogic.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePanel.resx">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\PlayerScore.txt" />
+    <Content Include="Images\Flags\Afghanistan.jpg" />
+    <Content Include="Images\Flags\Albania.jpg" />
+    <Content Include="Images\Flags\Algeria.jpg" />
+    <Content Include="Images\Flags\Andorra.jpg" />
+    <Content Include="Images\Flags\Angola.jpg" />
+    <Content Include="Images\Flags\Antigua_and_Barbuda.jpg" />
+    <Content Include="Images\Flags\Argentina.jpg" />
+    <Content Include="Images\Flags\Armenia.jpg" />
+    <Content Include="Images\Flags\Australia.jpg" />
+    <Content Include="Images\Flags\Austria.jpg" />
+    <Content Include="Images\Flags\Azerbaijan.jpg" />
+    <Content Include="Images\Flags\Bahamas.jpg" />
+    <Content Include="Images\Flags\Bahrain.jpg" />
+    <Content Include="Images\Flags\Bangladesh.jpg" />
+    <Content Include="Images\Flags\Barbados.jpg" />
+    <Content Include="Images\Flags\Belarus.jpg" />
+    <Content Include="Images\Flags\Belgium.jpg" />
+    <Content Include="Images\Flags\Belize.jpg" />
+    <Content Include="Images\Flags\Benin.jpg" />
+    <Content Include="Images\Flags\Bermuda.jpg" />
+    <Content Include="Images\Flags\Bhutan.jpg" />
+    <Content Include="Images\Flags\Bolivia.jpg" />
+    <Content Include="Images\Flags\Bosnia_and_Herzegovina.jpg" />
+    <Content Include="Images\Flags\Botswana.jpg" />
+    <Content Include="Images\Flags\Brazil.jpg" />
+    <Content Include="Images\Flags\Brunei.jpg" />
+    <Content Include="Images\Flags\Bulgaria.jpg" />
+    <Content Include="Images\Flags\Burkina_Faso.jpg" />
+    <Content Include="Images\Flags\Burundi.jpg" />
+    <Content Include="Images\Flags\Cambodia.jpg" />
+    <Content Include="Images\Flags\Cameroon.jpg" />
+    <Content Include="Images\Flags\Canada.jpg" />
+    <Content Include="Images\Flags\Cape_Verde.jpg" />
+    <Content Include="Images\Flags\Cayman_Islands.jpg" />
+    <Content Include="Images\Flags\Central_African_Republic.jpg" />
+    <Content Include="Images\Flags\Chad.jpg" />
+    <Content Include="Images\Flags\Chile.jpg" />
+    <Content Include="Images\Flags\China.jpg" />
+    <Content Include="Images\Flags\Colombia.jpg" />
+    <Content Include="Images\Flags\Comoros.jpg" />
+    <Content Include="Images\Flags\Cook_Islands.jpg" />
+    <Content Include="Images\Flags\Costa_Rica.jpg" />
+    <Content Include="Images\Flags\Croatia.jpg" />
+    <Content Include="Images\Flags\Cuba.jpg" />
+    <Content Include="Images\Flags\Cyprus.jpg" />
+    <Content Include="Images\Flags\Czech_Republic.jpg" />
+    <Content Include="Images\Flags\Democratic_Republic_of_the_Congo.jpg" />
+    <Content Include="Images\Flags\Denmark.jpg" />
+    <Content Include="Images\Flags\Djibouti.jpg" />
+    <Content Include="Images\Flags\Dominica.jpg" />
+    <Content Include="Images\Flags\Dominican_Republic.jpg" />
+    <Content Include="Images\Flags\East_Timor.jpg" />
+    <Content Include="Images\Flags\Ecuador.jpg" />
+    <Content Include="Images\Flags\Egypt.jpg" />
+    <Content Include="Images\Flags\El_Salvador.jpg" />
+    <Content Include="Images\Flags\England.jpg" />
+    <Content Include="Images\Flags\Equatorial_Guinea.jpg" />
+    <Content Include="Images\Flags\Eritrea.jpg" />
+    <Content Include="Images\Flags\Estonia.jpg" />
+    <Content Include="Images\Flags\Ethiopia.jpg" />
+    <Content Include="Images\Flags\Fiji.jpg" />
+    <Content Include="Images\Flags\Finland.jpg" />
+    <Content Include="Images\Flags\France.jpg" />
+    <Content Include="Images\Flags\Gabon.jpg" />
+    <Content Include="Images\Flags\Georgia.jpg" />
+    <Content Include="Images\Flags\Germany.jpg" />
+    <Content Include="Images\Flags\Ghana.jpg" />
+    <Content Include="Images\Flags\Greece.jpg" />
+    <Content Include="Images\Flags\Greenland.jpg" />
+    <Content Include="Images\Flags\Grenada.jpg" />
+    <Content Include="Images\Flags\Guam.jpg" />
+    <Content Include="Images\Flags\Guatemala.jpg" />
+    <Content Include="Images\Flags\Guinea-Bissau.jpg" />
+    <Content Include="Images\Flags\Guinea.jpg" />
+    <Content Include="Images\Flags\Guyana.jpg" />
+    <Content Include="Images\Flags\Haiti.jpg" />
+    <Content Include="Images\Flags\Honduras.jpg" />
+    <Content Include="Images\Flags\Hong_Kong.jpg" />
+    <Content Include="Images\Flags\Hungary.jpg" />
+    <Content Include="Images\Flags\Iceland.jpg" />
+    <Content Include="Images\Flags\India.jpg" />
+    <Content Include="Images\Flags\Indonesia.jpg" />
+    <Content Include="Images\Flags\Iran.jpg" />
+    <Content Include="Images\Flags\Iraq.jpg" />
+    <Content Include="Images\Flags\Ireland.jpg" />
+    <Content Include="Images\Flags\Israel.jpg" />
+    <Content Include="Images\Flags\Italy.jpg" />
+    <Content Include="Images\Flags\Ivorycoast.jpg" />
+    <Content Include="Images\Flags\Jamaica.jpg" />
+    <Content Include="Images\Flags\Japan.jpg" />
+    <Content Include="Images\Flags\Jordan.jpg" />
+    <Content Include="Images\Flags\Kazakhstan.jpg" />
+    <Content Include="Images\Flags\Kenya.jpg" />
+    <Content Include="Images\Flags\Kiribati.jpg" />
+    <Content Include="Images\Flags\Kuwait.jpg" />
+    <Content Include="Images\Flags\Kyrgyzstan.jpg" />
+    <Content Include="Images\Flags\Laos.jpg" />
+    <Content Include="Images\Flags\Latvia.jpg" />
+    <Content Include="Images\Flags\Lebanon.jpg" />
+    <Content Include="Images\Flags\Lesotho.jpg" />
+    <Content Include="Images\Flags\Liberia.jpg" />
+    <Content Include="Images\Flags\Libya.jpg" />
+    <Content Include="Images\Flags\Liechtenstein.jpg" />
+    <Content Include="Images\Flags\Lithuania.jpg" />
+    <Content Include="Images\Flags\Luxembourg.jpg" />
+    <Content Include="Images\Flags\Macedonia.jpg" />
+    <Content Include="Images\Flags\Madagascar.jpg" />
+    <Content Include="Images\Flags\Malawi.jpg" />
+    <Content Include="Images\Flags\Malaysia.jpg" />
+    <Content Include="Images\Flags\Maldives.jpg" />
+    <Content Include="Images\Flags\Mali.jpg" />
+    <Content Include="Images\Flags\Malta.jpg" />
+    <Content Include="Images\Flags\Mauritania.jpg" />
+    <Content Include="Images\Flags\Mauritius.jpg" />
+    <Content Include="Images\Flags\Mexico.jpg" />
+    <Content Include="Images\Flags\Moldova.jpg" />
+    <Content Include="Images\Flags\Monaco.jpg" />
+    <Content Include="Images\Flags\Mongolia.jpg" />
+    <Content Include="Images\Flags\Montenegro.jpg" />
+    <Content Include="Images\Flags\Morocco.jpg" />
+    <Content Include="Images\Flags\Mozambique.jpg" />
+    <Content Include="Images\Flags\Myanmar.jpg" />
+    <Content Include="Images\Flags\Namibia.jpg" />
+    <Content Include="Images\Flags\Nauru.jpg" />
+    <Content Include="Images\Flags\Nepal.jpg" />
+    <Content Include="Images\Flags\Netherlands.jpg" />
+    <Content Include="Images\Flags\New_Caledonia.jpg" />
+    <Content Include="Images\Flags\New_Zealand.jpg" />
+    <Content Include="Images\Flags\Nicaragua.jpg" />
+    <Content Include="Images\Flags\Niger.jpg" />
+    <Content Include="Images\Flags\Nigeria.jpg" />
+    <Content Include="Images\Flags\North_Korea.jpg" />
+    <Content Include="Images\Flags\Norway.jpg" />
+    <Content Include="Images\Flags\Oman.jpg" />
+    <Content Include="Images\Flags\Pakistan.jpg" />
+    <Content Include="Images\Flags\Palau.jpg" />
+    <Content Include="Images\Flags\Palestine.jpg" />
+    <Content Include="Images\Flags\Panama.jpg" />
+    <Content Include="Images\Flags\Papua_New_Guinea.jpg" />
+    <Content Include="Images\Flags\Paraguay.jpg" />
+    <Content Include="Images\Flags\Peru.jpg" />
+    <Content Include="Images\Flags\Philippines.jpg" />
+    <Content Include="Images\Flags\Poland.jpg" />
+    <Content Include="Images\Flags\Portugal.jpg" />
+    <Content Include="Images\Flags\Puerto_Rico.jpg" />
+    <Content Include="Images\Flags\Qatar.jpg" />
+    <Content Include="Images\Flags\Republic_of_the_Congo.jpg" />
+    <Content Include="Images\Flags\Romania.jpg" />
+    <Content Include="Images\Flags\Russia.jpg" />
+    <Content Include="Images\Flags\Rwanda.jpg" />
+    <Content Include="Images\Flags\Saint_Kitts_and_Nevis.jpg" />
+    <Content Include="Images\Flags\Saint_Lucia.jpg" />
+    <Content Include="Images\Flags\Saint_Vincent_and_the_Grenadines.jpg" />
+    <Content Include="Images\Flags\Samoa.jpg" />
+    <Content Include="Images\Flags\San_Marino.jpg" />
+    <Content Include="Images\Flags\Sao_Tome_and_Principe.jpg" />
+    <Content Include="Images\Flags\Saudi_Arabia.jpg" />
+    <Content Include="Images\Flags\Scotland.jpg" />
+    <Content Include="Images\Flags\Senegal.jpg" />
+    <Content Include="Images\Flags\Serbia.jpg" />
+    <Content Include="Images\Flags\Seychelles.jpg" />
+    <Content Include="Images\Flags\Sierra_Leone.jpg" />
+    <Content Include="Images\Flags\Singapore.jpg" />
+    <Content Include="Images\Flags\Slovakia.jpg" />
+    <Content Include="Images\Flags\Slovenia.jpg" />
+    <Content Include="Images\Flags\Solomon_Islands.jpg" />
+    <Content Include="Images\Flags\Somalia.jpg" />
+    <Content Include="Images\Flags\South_Africa.jpg" />
+    <Content Include="Images\Flags\South_Korea.jpg" />
+    <Content Include="Images\Flags\South_Sudan.jpg" />
+    <Content Include="Images\Flags\Spain.jpg" />
+    <Content Include="Images\Flags\Sri_Lanka.jpg" />
+    <Content Include="Images\Flags\Sudan.jpg" />
+    <Content Include="Images\Flags\Suriname.jpg" />
+    <Content Include="Images\Flags\Swaziland.jpg" />
+    <Content Include="Images\Flags\Sweden.jpg" />
+    <Content Include="Images\Flags\Switzerland.jpg" />
+    <Content Include="Images\Flags\Syria.jpg" />
+    <Content Include="Images\Flags\Taiwan.jpg" />
+    <Content Include="Images\Flags\Tajikistan.jpg" />
+    <Content Include="Images\Flags\Tanzania.jpg" />
+    <Content Include="Images\Flags\Thailand.jpg" />
+    <Content Include="Images\Flags\theGambia.jpg" />
+    <Content Include="Images\Flags\Togo.jpg" />
+    <Content Include="Images\Flags\Tonga.jpg" />
+    <Content Include="Images\Flags\Trinidad_and_Tobago.jpg" />
+    <Content Include="Images\Flags\Tunisia.jpg" />
+    <Content Include="Images\Flags\Turkey.jpg" />
+    <Content Include="Images\Flags\Turkmenistan.jpg" />
+    <Content Include="Images\Flags\Tuvalu.jpg" />
+    <Content Include="Images\Flags\Uganda.jpg" />
+    <Content Include="Images\Flags\Ukraine.jpg" />
+    <Content Include="Images\Flags\United_Arab_Emirates.jpg" />
+    <Content Include="Images\Flags\United_Kingdom.jpg" />
+    <Content Include="Images\Flags\United_States.jpg" />
+    <Content Include="Images\Flags\Uruguay.jpg" />
+    <Content Include="Images\Flags\Uzbekistan.jpg" />
+    <Content Include="Images\Flags\Vanuatu.jpg" />
+    <Content Include="Images\Flags\Venezuela.jpg" />
+    <Content Include="Images\Flags\Vietnam.jpg" />
+    <Content Include="Images\Flags\Wales.jpg" />
+    <Content Include="Images\Flags\Yemen.jpg" />
+    <Content Include="Images\Flags\Zambia.jpg" />
+    <Content Include="Images\Flags\Zimbabwe.jpg" />
+    <Content Include="Images\Layout\button-startgame.jpg" />
+    <Content Include="Images\Layout\theme2.jpg" />
+    <Content Include="Images\Layout\theme7.jpg" />
+    <None Include="Resources\world_map.jpg" />
+    <Content Include="world.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
